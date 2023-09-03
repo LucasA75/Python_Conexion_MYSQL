@@ -5,7 +5,7 @@ import sys
 
 while True:
     try:
-        myConexion = pymysql.connect(user=config("USER"), password=config("PASS"), database="dbprueba")
+        myConexion = pymysql.connect(user=config("USER"), password=config("PASS"), database=config("DATABASE"))
         if myConexion:
             print("Conexión establecida correctamente.")
             print("###################################")
